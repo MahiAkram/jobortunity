@@ -466,11 +466,11 @@
 }
 #howtd .howtd-item .htd-item-icon-special::before{
     content: '';
-    width: 250px;
-    height: 1px;
+    width: 0;
+    height: 0;
     position: absolute;
-    top: 50%;
-    left: 135%;
+    top: 0;
+    left: 0;
     /* border: 2px dashed var(--fo); */
 }
 #howtd .howtd-item .htd-item-icon-special:hover{
