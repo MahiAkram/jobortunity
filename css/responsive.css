@@ -1,0 +1,649 @@
+/* extra small devices */
+@media (max-width: 575px) {
+    .heading .title-text{
+        width: 100%;
+    }
+    .heading h3{
+        font-size: 28px;
+     }
+    .heading p{
+        font-size: 14px;
+     }
+    #banner .banner-text{
+        text-align: center;
+    }
+    #banner .banner-text h1{
+        font-size: 48px;
+    }
+    #banner .banner-text p{
+        font-size: 16px;
+    }
+    #banner .banner-img img{
+        top: -550px;
+        left: 0;
+        transform: translateX(-50%);
+        z-index: -1;
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    #submit .tab-content .tab-pane .submitter input{
+        width: 92.5%;
+        margin-bottom: 20px;
+    }
+    #submit .tab-content .tab-pane .submitter select{
+        width: 92.5%;
+        margin-bottom: 20px;
+    }
+    #submit .tab-content .tab-pane .submitter button{
+        width: 92.5%;
+        margin-bottom: 20px;
+    }
+    #category .m-95{
+        margin-top: 0px;
+    }
+    #category .heading{
+        margin-bottom: 30px;
+    }
+    #category .heading h3{
+        font-size: 28px;
+    }
+    #category .heading p{
+        font-size: 14px;
+    }
+    #category .cat-item:hover .cat-item-overlay{
+        transform: scale(1);
+    }
+    #howtd .howtd-item .htd-item-icon::before{
+        width: 80%;
+        top: 265%;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+    }
+    #recent-jobs .recent-jobs-search-bar{
+        margin-top: 30px;
+    }
+    #recent-jobs .recent-jobs-search-bar input{
+        margin-bottom: 20px;
+    }
+    #recent-jobs .recent-jobs-search-bar select{
+        margin-bottom: 20px;
+    }
+    #recent-jobs .mr-45{
+        margin-right: 10px;
+    }
+    #recent-jobs .rj-works .loc-icon{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #recent-jobs .rj-works .work-salary{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #recent-jobs .rj-works .view-button{
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+    #recent-jobs .recent-work-last-text p{
+        padding-top: 20px;
+    }
+    #mworkerp .mworker-item .mworker-image .mworker-image-overlay{
+        left: 68%;
+    }
+    #whtd .whtd-item{
+        margin-bottom: 20px;
+    }
+    #brand .milestone .mile-text-2{
+        margin-right: 0px;
+    }
+    #brand .milestone .mile-text-4{
+        margin-right: 0px;
+    }
+    #brand .milestone::before{
+        left: 50%;
+    }
+    #brand .milestone::after{
+        left: 50%;
+    }
+    #brand .brand-logos{
+        text-align: center;
+    }
+    #brand .brand-logos .br-logo-1{
+        margin-left: 0px;
+        float: none;
+        margin-bottom: 20px;
+    }
+    #brand .brand-logos .br-logo-3{
+        margin-left: 0px;
+        float: none;
+        margin-bottom: 20px;
+    }
+    #brand .brand-logos .br-logo-2{
+        margin-left: 0px;
+        float: none;
+        margin-bottom: 20px;
+    }
+    #brand .brand-logos .br-logo-4{
+        margin-left: 0px;
+        float: none;
+        margin-bottom: 30px;
+    }
+    #footer .footer-overlay .footer-cand-links ul li::before{
+        left: -9%;
+    }
+    #toprw .toprw-last-text button{
+        margin-top: 10px;
+    }
+    #footer::before{
+        top: 11.5%;
+    }
+    
+    #footer::after{
+        top: 96%;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .heading .title-text{
+        width: 100%;
+    }
+    .heading h3{
+        font-size: 28px;
+     }
+    .heading p{
+        font-size: 14px;
+     }
+    #banner .banner-text{
+        text-align: center;
+    }
+    #banner .banner-text h1{
+        font-size: 48px;
+    }
+    #banner .banner-text p{
+        font-size: 16px;
+    }
+    #banner .banner-img img{
+        top: -550px;
+        left: 0;
+        transform: translateX(-50%);
+        z-index: -1;
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    #submit .tab-content .tab-pane .submitter input{
+        width: 92.5%;
+        margin-bottom: 20px;
+    }
+    #submit .tab-content .tab-pane .submitter select{
+        width: 92.5%;
+        margin-bottom: 20px;
+    }
+    #submit .tab-content .tab-pane .submitter button{
+        width: 92.5%;
+        margin-bottom: 20px;
+    }
+    #category .m-95{
+        margin-top: 0px;
+    }
+    #category .heading{
+        margin-bottom: 30px;
+    }
+    #category .heading h3{
+        font-size: 28px;
+    }
+    #category .heading p{
+        font-size: 14px;
+    }
+    #category .cat-item:hover .cat-item-overlay{
+        transform: scale(1);
+    }
+    #howtd .howtd-item .htd-item-icon::before{
+        width: 80%;
+        top: 265%;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+    }
+    #recent-jobs .recent-jobs-search-bar{
+        margin-top: 30px;
+    }
+    #recent-jobs .recent-jobs-search-bar input{
+        margin-bottom: 20px;
+    }
+    #recent-jobs .recent-jobs-search-bar select{
+        margin-bottom: 20px;
+    }
+    #recent-jobs .mr-45{
+        margin-right: 10px;
+    }
+    #recent-jobs .rj-works .loc-icon{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #recent-jobs .rj-works .work-salary{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #recent-jobs .rj-works .view-button{
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+    #recent-jobs .recent-work-last-text p{
+        padding-top: 20px;
+    }
+    #mworkerp .mworker-item .mworker-image .mworker-image-overlay{
+        left: 69%;
+    }
+    #whtd .whtd-item{
+        margin-bottom: 20px;
+    }
+    #brand .milestone .mile-text-2{
+        margin-right: 0px;
+    }
+    #brand .milestone .mile-text-4{
+        margin-right: 0px;
+    }
+    #brand .milestone::before{
+        left: 50%;
+    }
+    #brand .milestone::after{
+        left: 50%;
+    }
+    #brand .brand-logos{
+        text-align: center;
+    }
+    #brand .brand-logos .br-logo-1{
+        margin-left: 0px;
+        float: none;
+        margin-bottom: 20px;
+    }
+    #brand .brand-logos .br-logo-3{
+        margin-left: 0px;
+        float: none;
+        margin-bottom: 20px;
+    }
+    #brand .brand-logos .br-logo-2{
+        margin-left: 0px;
+        float: none;
+        margin-bottom: 20px;
+    }
+    #brand .brand-logos .br-logo-4{
+        margin-left: 0px;
+        float: none;
+        margin-bottom: 30px;
+    }
+    #footer .footer-overlay .footer-cand-links ul li::before{
+        left: -9%;
+    }
+    #toprw .toprw-last-text button{
+        margin-top: 10px;
+    }
+    #footer::before{
+        top: 11.5%;
+    }
+    
+    #footer::after{
+        top: 96%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .heading .title-text{
+        width: 100%;
+    }
+    .heading h3{
+        font-size: 28px;
+     }
+    .heading p{
+        font-size: 14px;
+     }
+    #banner .banner-text{
+        text-align: center;
+    }
+    #banner .banner-text h1{
+        font-size: 48px;
+    }
+    #banner .banner-text p{
+        font-size: 16px;
+    }
+    #banner .banner-img img{
+        top: -550px;
+        left: 0;
+        transform: translateX(-50%);
+        z-index: -1;
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    #submit .tab-content .tab-pane .submitter input{
+        width: 92.5%;
+        margin-bottom: 20px;
+    }
+    #submit .tab-content .tab-pane .submitter select{
+        width: 92.5%;
+        margin-bottom: 20px;
+    }
+    #submit .tab-content .tab-pane .submitter button{
+        width: 92.5%;
+        margin-bottom: 20px;
+    }
+    #category .m-95{
+        margin-top: 0px;
+    }
+    #category .heading{
+        margin-bottom: 30px;
+    }
+    #category .heading h3{
+        font-size: 28px;
+    }
+    #category .heading p{
+        font-size: 14px;
+    }
+    #category .cat-item:hover .cat-item-overlay{
+        transform: scale(1);
+    }
+    #howtd .howtd-item .htd-item-icon::before{
+        width: 80%;
+        top: 265%;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+    }
+    #recent-jobs .recent-jobs-search-bar{
+        margin-top: 30px;
+    }
+    #recent-jobs .recent-jobs-search-bar input{
+        margin-bottom: 20px;
+    }
+    #recent-jobs .recent-jobs-search-bar select{
+        margin-bottom: 20px;
+    }
+    #recent-jobs .mr-45{
+        margin-right: 10px;
+    }
+    #recent-jobs .rj-works .loc-icon{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #recent-jobs .rj-works .work-salary{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #recent-jobs .rj-works .view-button{
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+    #recent-jobs .recent-work-last-text p{
+        padding-top: 20px;
+    }
+    #whtd .whtd-item{
+        margin-bottom: 20px;
+    }
+    #brand .milestone .mile-text-2{
+        margin-right: 0px;
+    }
+    #brand .milestone .mile-text-4{
+        margin-right: 0px;
+    }
+    #brand .milestone::before{
+        left: 50%;
+    }
+    #brand .milestone::after{
+        left: 50%;
+    }
+    #brand .brand-logos{
+        text-align: center;
+    }
+    #brand .brand-logos .br-logo-1{
+        margin-left: 0px;
+        float: none;
+        margin-bottom: 20px;
+    }
+    #brand .brand-logos .br-logo-3{
+        margin-left: 0px;
+        float: none;
+        margin-bottom: 20px;
+    }
+    #brand .brand-logos .br-logo-2{
+        margin-left: 0px;
+        float: none;
+        margin-bottom: 20px;
+    }
+    #brand .brand-logos .br-logo-4{
+        margin-left: 0px;
+        float: none;
+        margin-bottom: 30px;
+    }
+    #footer .footer-overlay .footer-cand-links ul li::before{
+        left: -9%;
+    }
+    #toprw .toprw-last-text button{
+        margin-top: 10px;
+    }
+    #footer::before{
+        top: 11.5%;
+    }
+    
+    #footer::after{
+        top: 96%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1399px) {
+    .heading .title-text{
+        width: 100%;
+    }
+    .heading h3{
+        font-size: 32px;
+     }
+    .heading p{
+        font-size: 16px;
+    }
+    .navbar .navbar-nav .nav-item{
+        margin-left: 20px;
+    }
+    .navbar .navbar-nav .nav-item .nav-link{
+        font-size: 17px;
+    }
+    .navbar .navbar-nav .sib a{
+        width: 147px;
+        height: 55px;
+        font-family: var(--pf);
+        font-size: 17px;
+    }
+    #banner .banner-text h1{
+        font-size: 52px;
+    }
+    #banner .banner-text p{
+        font-size: 14px;
+    }
+    #banner .banner-img img{
+        top: 110px;
+        left: -60px;
+        z-index: -1;
+        transform: scale(0.8);
+    }
+    #submit .tab-content .tab-pane .submitter input{
+        width: 25%;
+        margin-bottom: 20px;
+        margin-left: 35px;
+    }
+    #submit .tab-content .tab-pane .submitter select{
+        width: 25%;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    #submit .tab-content .tab-pane .submitter button{
+        width: 12%;
+        margin-bottom: 20px;
+    }
+    #category .m-95{
+        margin-top: 0px;
+    }
+    #category .heading{
+        margin-bottom: 30px;
+    }
+    #category .heading h3{
+        font-size: 28px;
+    }
+    #category .heading p{
+        font-size: 14px;
+    }
+    #category .cat-item h4{
+        font-size: 18px;
+    }
+    #category .cat-item p{
+        font-size: 12px;
+    }
+    #category .cat-item .cat-item-overlay h4{
+        font-size: 18px;
+    }
+    #category .cat-item .cat-item-overlay p{
+        font-size: 12px;
+    }
+    #category .cat-item:hover .cat-item-overlay{
+        transform: scale(1.1);
+    }
+    #howtd .howtd-item .htd-item-icon::before{
+        width: 138%;
+        top: 50%;
+        left: 138%;
+    }
+    #howtd .howtd-item .htd-item-text h4{
+        font-size: 18px;
+    }
+    #howtd .howtd-item .htd-item-text p{
+        font-size: 12px;
+    }
+    #recent-jobs .recent-jobs-search-bar{
+        margin-top: 30px;
+    }
+    #recent-jobs .recent-jobs-search-bar input{
+        margin-bottom: 20px;
+    }
+    #recent-jobs .recent-jobs-search-bar select{
+        margin-bottom: 20px;
+    }
+    #recent-jobs .mr-45{
+        margin-right: 10px;
+    }
+    #recent-jobs .rj-works .loc-icon{
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+    #recent-jobs .rj-works .work-salary{
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+    #recent-jobs .rj-works .view-button{
+        padding-top: 40px;
+        padding-left: 0px;
+        padding-bottom: 20px;
+    }
+    #recent-jobs .recent-work-last-text p{
+        padding-top: 20px;
+    }
+    #whtd .whtd-item{
+        margin-bottom: 20px;
+    }
+    #whtd .whtd-item p{
+        font-size: 14px;
+    }
+    #brand .milestone .mile-text-2{
+        margin-right: 0px;
+    }
+    #brand .milestone .mile-text-4{
+        margin-right: 0px;
+    }
+    #brand .milestone::before{
+        left: 50%;
+    }
+    #brand .milestone::after{
+        left: 50%;
+    }
+    #brand .brand-logos img{
+        width: 100%;
+    }
+    #brand .brand-logos .br-logo-1{
+        width: 150px;
+        margin-left: 0px;
+        float: left;
+        margin-bottom: 20px;
+        margin-right: 0px;
+        clear: right;
+        margin-left: 45px;
+        margin-top: 35px;
+    }
+    #brand .brand-logos .br-logo-3{
+        width: 150px;
+        margin-left: 0px;
+        float: left;
+        margin-bottom: 20px;
+        margin-right: 0px;
+        clear: right;
+        margin-left: 45px;
+    }
+    #brand .brand-logos .br-logo-2{
+        width: 150px;
+        margin-left: 0px;
+        float: right;
+        margin-bottom: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 35px;
+    }
+    #brand .brand-logos .br-logo-4{
+        width: 150px;
+        margin-left: 0px;
+        float: right;
+        margin-bottom: 30px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    #brand .milestone span{
+        font-size: 34px;
+    }
+    #brand .milestone h5{
+        font-size: 22px;
+    }
+    #footer .footer-overlay .footer-cand-links ul li::before{
+        left: -32%;
+        width: 30px;
+    }
+    #footer .footer-overlay .footer-cand-links ul li:hover:before{
+        width: 40px;
+    }
+    #toprw .toprw-last-text button{
+        margin-top: 10px;
+    }
+    #footer::before{
+        top: 28.5%;
+    }
+    
+    #footer::after{
+        top: 89%;
+    }
+    #footer .footer-overlay p{
+        font-size: 13px;
+    }
+    #footer .footer-overlay .footer-heading h4{
+        font-size: 19px;
+    }
+    #footer .footer-overlay .footer-cand-links ul li{
+        padding-left: 0;
+        margin-left: 0;
+    }
+    #footer .footer-overlay .footer-cand-links ul li a{
+        font-size: 11px;
+        margin-left: 0px;
+    }
+    #footer .footer-overlay .footer-cand-links ul li:hover a{
+        margin-left: 10px;
+    }
+    #footer .footer-overlay .footer-cand-links{
+        padding-left: 0px;
+    }
+    #footer .footer-overlay .footer-newsletter .footer-input button{
+        font-size: 16px;
+        height: 45px;
+    }
+    #footer .footer-overlay .footer-last-text p{
+        font-size: 14px;
+    }
+}

@@ -1,15 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arimo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arimo:wght@400;500;600;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* table of contents starts
     1. Nvabar/Menu
     2. banner
     3. submit
-
+    4. how to do
+    5. recent jobs
+    6. what to do
+    7.top remote workers
+    8. more worker part
+    9. brand
+    10. footer
  table of contents ends */
 
  :root{
      --hf: 'Abril Fatface', cursive ;
      --pf: 'Arimo', sans-serif;
+     --sf: 'Lobster Two', cursive;
      --mc: #848484;
      --fch: #00b8ef;
      --fbg: #58d2f5;
@@ -43,7 +50,44 @@
  .clr{
      clear: both;
  }
-
+ .m-95{
+     margin-top: 95px;
+ }
+ .m-10{
+     margin-top: 10px;
+ }
+ .m-60{
+     margin-top: 60px;
+ }
+ .mr-45{
+     margin-right: 45px;
+ }
+ .mb-30{
+     margin-bottom: 30px;
+ }
+ .heading h3{
+    font-family: var(--hf);
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--hc);
+    text-transform: capitalize;
+ }
+.heading span{
+    width: 50px;
+    height: 5px;
+    background: var(--fch);
+    display: inline-block;
+}
+.heading p{
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--pc);
+}
+.heading .title-text{
+    width: 570px;
+    margin: 5px auto;
+}
  /* ===========================
         common css ends
 ============================ */
@@ -125,9 +169,7 @@
     background: var(--hbg);
     padding-top: 15px;
     border-radius: 5px;
-    -webkit-box-shadow: 0px 2px 68px 10px rgba(88,210,245,0.3);
-    -moz-box-shadow: 0px 2px 68px 10px rgba(88,210,245,0.3);
-    box-shadow: 0px 2px 68px 10px rgba(88,210,245,0.3);
+    box-shadow: 0px 0px 20px 1px rgb(8 186 239 / 35%);
     transition: all linear 0.7s;
     text-align: center;
 }
@@ -186,107 +228,1190 @@
         banner css ends
 ============================ */
 
-
  /* ===========================
         submit css starts
 ============================ */
 #submit{
-    position: absolute;
-    width: 100%;
-    top: 651px;
+    position: relative;
+    top: -45px;
     left: 0;
-    z-index: 9999;
+    z-index: 99999;
+    margin-bottom: 50px;
 }
-#submit .sub-bars .nav-tabs{
+#submit .nav-tabs{
     border: none !important;
 }
-#submit .sub-bars .nav-tabs .nav-item .nav-link{
-    width: 129px;
-    height: 46px;
+#submit .nav-tabs .nav-item{
+    border: none !important;
+}
+#submit .nav-tabs .nav-item .nav-link{
+    border: none !important;
     background: transparent;
+}
+#submit .nav-tabs .nav-item .nav-link{
     font-family: var(--pf);
     font-size: 20px;
     font-weight: 400;
+    text-transform: capitalize;
     color: var(--pc);
-    text-transform: capitalize;
-    text-align: center;
-    border: none !important;
-    border-radius: 0 !important;
 }
-#submit .sub-bars .nav-tabs .nav-item .active{
-    background: var(--hbg);
+#submit .nav-tabs .nav-item .active{
+    background: var(--hbg) !important;
     color: #fff;
-    border-top-left-radius: 5px !important;
-    border-top-right-radius: 5px !important;
 }
-#submit .sub-form{
-    margin-top: 7px;
+#submit .tab-content .tab-pane .submitter{
+    background: #fff;
+    -webkit-box-shadow: 0px 2px 128px -30px rgba(140,140,140,0.6);
+    -moz-box-shadow: 0px 2px 128px -30px rgba(140,140,140,0.6);
+    box-shadow: 0px 2px 128px -30px rgba(140,140,140,0.6);
 }
-#submit .sub-form .tab-content form{
-    background: rgb(255, 255, 255);
-    -webkit-box-shadow: 1px 62px 82px -52px rgba(140,140,140,0.8);
--moz-box-shadow: 1px 62px 82px -52px rgba(140,140,140,0.8);
-box-shadow: 1px 62px 82px -52px rgba(140,140,140,0.8);
-}
-#submit .sub-form .tab-content form .in-txt{
-    padding-bottom: 37px;
-    padding-top: 33px;
-}
-#submit .sub-form .tab-content form .sel-txt{
-    padding-bottom: 37px;
-    padding-top: 33px;
-}
-#submit .sub-form .tab-content form input{
-    outline: 0 !important;
+#submit .tab-content .tab-pane .submitter input{
     width: 350px;
     height: 45px;
-    border: 1px var(--fo) solid !important;
+    outline: 0;
+    border: 1px solid var(--fo);
     font-family: var(--pf);
     font-size: 14px;
     font-weight: 400;
     font-style: italic;
-    color: var(--fpc) !important;
+    color: var(--fpc);
+    padding-left: 15px;
+    margin-top: 38px;
+    margin-bottom: 38px;
     margin-left: 20px;
-    border-radius: 0 !important;
 }
-#submit .sub-form .tab-content form select{
-    outline: 0 !important;
+#submit .tab-content .tab-pane .submitter select{
     width: 350px;
     height: 45px;
-    border: 1px var(--fo) solid !important;
+    border-radius: 0;
+    outline: 0;
+    border: 1px solid var(--fo);
     font-family: var(--pf);
     font-size: 14px;
     font-weight: 400;
     font-style: italic;
-    color: var(--fpc) !important;
-    text-transform: capitalize;
-    margin-left: 65px;
-    border-radius: 0 !important;
+    color: var(--fpc);
+    margin-left: 20px;
+    padding-left: 15px;
 }
-#submit .sub-form .tab-content form select option{
-    text-transform: capitalize !important;
-}
-#submit .sub-form .tab-content form .location{
-    margin-left: 45px;
-}
-#submit .sub-form .tab-content form button{
-    width: 110px;
-    height: 45px;
-    font-family: var(--pf);
-    font-size: 20px;
-    font-weight: 400;
-    color: #fff !important;
-    text-transform: capitalize;
+#submit .tab-content .tab-pane .submitter button{
+    width: 108px;
+    height: 47px;
     background: var(--hbg);
     border: none;
-    border-radius: 0 !important;
-    margin-left: 105px;
-    margin-bottom: 37px;
-    margin-top: 33px;
+    outline: 0;
+    font-family: var(--pf);
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 45px;
+    text-align: center;
+    margin-left: 20px;
+}
+#submit .tab-content .tab-pane .submitter button:hover{
+    background: var(--hbgi);
+    box-shadow: 0px 0px 20px 1px rgb(8 186 239 / 35%);
 }
  /* ===========================
         submit css ends
 ============================ */
+
+
+ /* ===========================
+        category css starts
+============================ */
+
+#category .cat-item{
+    background: var(--cbg);
+    position: relative;
+    border-radius: 5px;
+}
+#category .cat-item img{
+    padding-top: 74px;
+}
+#category .cat-item h4{
+    font-family: var(--hf);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--hc);
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+#category .cat-item p{
+    font-family: var(--pf);
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+    text-transform: capitalize;
+    padding-bottom: 74px;
+}
+#category .cat-item .cat-item-overlay{
+    background: var(--hbg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 1px rgb(8 186 239 / 35%);
+    display: none;
+    z-index: 999999;
+    transition: all linear 0.4s;
+}
+#category .cat-item:hover .cat-item-overlay{
+    display: inline;
+    transform: scale(1.2);
+    height: 110%;
+}
+#category .cat-item .cat-item-overlay img{
+    width: 60px;
+}
+#category .cat-item .cat-item-overlay h4{
+    font-family: var(--hf);
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+}
+#category .cat-item .cat-item-overlay p{
+    font-family: var(--pf);
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    padding-bottom: 0px;
+}
+#category .cat-item .cat-item-overlay a{
+    background: #fff;
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--fch);
+    text-transform: capitalize;
+    text-align: center;
+    padding: 10px 16px;
+    border-radius: 5px;
+    margin-bottom: 45px !important;
+}
+ /* ===========================
+        category css ends
+============================ */
+
+
+ /* ===========================
+    how to do part css starts
+============================ */
+#howtd{
+    background: var(--cbg);
+    margin-top: 80px;
+}
+#howtd .howtd-item{
+    margin-top: 50px;
+}
+#howtd .howtd-item .htd-item-icon{
+    width: 100px;
+    height: 100px;
+    background: var(--cbg);
+    margin: 0 auto;
+    -webkit-box-shadow: 2px 2px 46px -9px rgba(0,0,0,0.22);
+    -moz-box-shadow: 2px 2px 46px -9px rgba(0,0,0,0.22);
+    box-shadow: 2px 2px 46px -9px rgba(0,0,0,0.22);
+    position: relative;
+}
+#howtd .howtd-item .htd-item-icon::before{
+    content: '';
+    width: 250px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 135%;
+    border: 2px dashed var(--fo);
+}
+#howtd .howtd-item .htd-item-icon:hover{
+    background: var(--hbg);
+    -webkit-box-shadow: 0px 2px 35px 8px rgba(88,210,245,0.31);
+    -moz-box-shadow: 0px 2px 35px 8px rgba(88,210,245,0.31);
+    box-shadow: 0px 2px 35px 8px rgba(88,210,245,0.31);
+}
+#howtd .howtd-item .htd-item-icon img{
+    margin-top: 20px;
+}
+#howtd .howtd-item .htd-item-text h4{
+    font-family: var(--hf);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--hc);
+    text-transform: capitalize;
+    padding-top: 22px;
+}
+#howtd .howtd-item .htd-item-text p{
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--pc);
+    text-transform: capitalize;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+#howtd .howtd-item .htd-item-icon-special{
+    width: 100px;
+    height: 100px;
+    background: var(--cbg);
+    margin: 0 auto;
+    -webkit-box-shadow: 2px 2px 46px -9px rgba(0,0,0,0.22);
+    -moz-box-shadow: 2px 2px 46px -9px rgba(0,0,0,0.22);
+    box-shadow: 2px 2px 46px -9px rgba(0,0,0,0.22);
+    position: relative;
+}
+#howtd .howtd-item .htd-item-icon-special::before{
+    content: '';
+    width: 250px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 135%;
+    /* border: 2px dashed var(--fo); */
+}
+#howtd .howtd-item .htd-item-icon-special:hover{
+    background: var(--hbg);
+    -webkit-box-shadow: 0px 2px 35px 8px rgba(88,210,245,0.31);
+    -moz-box-shadow: 0px 2px 35px 8px rgba(88,210,245,0.31);
+    box-shadow: 0px 2px 35px 8px rgba(88,210,245,0.31);
+}
+#howtd .howtd-item .htd-item-icon-special img{
+    margin-top: 20px;
+}
+ /* ===========================
+    how to do part css ends
+============================ */
+
+
+ /* ===========================
+    recent jobs part css starts
+============================ */
+#recent-jobs{
+    margin-top: 100px;
+}
+#recent-jobs .recent-jobs-search-bar{
+    margin-top: 65px;
+}
+#recent-jobs .recent-jobs-search-bar input{
+    width: 100%;
+    outline: 0;
+    border: 1px solid var(--fo);
+    font-family: var(--pf);
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--fpc);
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#recent-jobs .recent-jobs-search-bar select{
+    width: 100%;
+    border-radius: 0;
+    outline: 0;
+    border: 1px solid var(--fo);
+    font-family: var(--pf);
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: capitalize;
+    color: var(--fpc);
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 9px;
+}
+#recent-jobs .recent-jobs-search-bar button{
+    width: 100%;
+    background: var(--hbg);
+    border: none;
+    outline: 0;
+    font-family: var(--pf);
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 43px;
+    text-align: center;
+}
+#recent-jobs .recent-jobs-search-bar button:hover{
+    background: var(--hbgi);
+    box-shadow: 0px 0px 20px 1px rgb(8 186 239 / 35%);
+}
+#recent-jobs .rj-filter-options{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+#recent-jobs .rj-filter-options .filter-group{
+    float: left;
+}
+#recent-jobs .rj-filter-options .filter-group input[type="checkbox"]{
+    display: none;
+    cursor: pointer;
+}
+#recent-jobs .rj-filter-options .filter-group label{
+    position: relative;
+    margin-left: 20px;
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: capitalize;
+    color: var(--fpc);
+    cursor: pointer;
+    margin-right: 20px;
+}
+#recent-jobs .rj-filter-options .filter-group label::before{
+    content: "";
+    background: url(../images/tick.svg) no-repeat center / cover;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 6px;
+    left: -18px;
+    visibility: hidden;
+    z-index: 99999;
+}
+#recent-jobs .rj-filter-options .filter-group label::after{
+    content: "";
+    background-color: #eee;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    position: absolute;
+    top: 6px;
+    left: -18px;
+}
+#recent-jobs .rj-filter-options .filter-group input[type="checkbox"]:checked + label::before{
+    visibility: visible;
+} 
+#recent-jobs .rj-works{
+    width: 100%;
+    background: var(--cbg);
+}
+#recent-jobs .rj-works:hover{
+    background: var(--hbg);
+    box-shadow: 0px 0px 20px 1px rgb(8 186 239 / 35%);
+}
+#recent-jobs .rj-works .work-item .work-icon{
+    float: left;
+}
+#recent-jobs .rj-works .work-item .work-icon img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+#recent-jobs .rj-works .work-item .work-text{
+    padding-top: 27px;
+}
+#recent-jobs .rj-works .work-item .work-text h6{
+    font-family: var(--pf);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--fch);
+    text-transform: capitalize;
+}
+#recent-jobs .rj-works:hover .work-item .work-text h6{
+    color: #fff;
+}
+#recent-jobs .rj-works .work-item .work-text h4{
+    font-family: var(--pf);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--hc);
+    text-transform: capitalize;
+}
+#recent-jobs .rj-works:hover .work-item .work-text h4{
+    color: #fff;
+}
+#recent-jobs .rj-works .work-item .work-text h5{
+    font-family: var(--pf);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--pc);
+    text-transform: capitalize;
+}
+#recent-jobs .rj-works:hover .work-item .work-text h5{
+    color: #fff;
+}
+#recent-jobs .rj-works .loc-icon{
+    padding-top: 52px;
+}
+#recent-jobs .rj-works .loc-icon i{
+    font-size: 16px;
+    color: var(--pc);
+}
+#recent-jobs .rj-works:hover .loc-icon i{
+    color: #fff;
+}
+#recent-jobs .rj-works .loc-icon i span{
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--pc);
+    text-transform: capitalize;
+    padding-left: 13px;
+}
+#recent-jobs .rj-works:hover .loc-icon i span{
+    color: #fff;
+}
+#recent-jobs .rj-works .work-salary{
+    padding-top: 52px;
+}
+#recent-jobs .rj-works .work-salary p{
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--pc);
+    text-transform: capitalize;
+}
+#recent-jobs .rj-works:hover .work-salary p{
+    color: #fff;
+}
+#recent-jobs .rj-works .view-button{
+    padding-top: 37px;
+    padding-left: 20px;
+}
+#recent-jobs .rj-works .view-button button{
+    width: 121px;
+    height: 46px;
+    background: var(--hbg);
+    border: none;
+    outline: 0;
+    font-family: var(--pf);
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 5px;
+}
+#recent-jobs .rj-works:hover .view-button button{
+    background: #fff;
+    color: var(--hc);
+}
+#recent-jobs .recent-work-last-text{
+    margin-top: 50px;
+}
+#recent-jobs .recent-work-last-text p{
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--pc);
+    text-transform: capitalize;
+}
+#recent-jobs .recent-work-last-text button{
+    width: 209px;
+    height: 56px;
+    background: var(--hbg);
+    border: none;
+    outline: 0;
+    font-family: var(--pf);
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 56px;
+    text-align: center;
+    border-radius: 5px;
+    float: right;
+    margin-bottom: 100px;
+}
+#recent-jobs .recent-work-last-text button:hover{
+    background: var(--hbgi);
+    box-shadow: 0px 0px 20px 1px rgb(8 186 239 / 35%);
+}
+#recent-jobs .recent-work-last-text button span{
+    padding-left: 6px;
+}
+#recent-jobs .recent-work-last-text button span i{
+    font-size: 20px;
+}
+ /* ===========================
+    recent jobs part css ends
+============================ */
+
+
+ /* ===========================
+    what to do part css starts
+============================ */
+#whtd .whtd-item{
+    background: var(--cbg);
+    padding-bottom: 20px;
+}
+#whtd .whtd-item:hover{
+    background: var(--hbgi);
+    -webkit-box-shadow: 0px 2px 35px 8px rgba(88,210,245,0.31);
+    -moz-box-shadow: 0px 2px 35px 8px rgba(88,210,245,0.31);
+    box-shadow: 0px 2px 35px 8px rgba(88,210,245,0.31);
+}
+#whtd .whtd-item h5{
+    font-family: var(--pf);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--hc);
+    text-transform: capitalize;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+#whtd .whtd-item:hover h5{
+    color: #fff;
+}
+#whtd .whtd-item h6{
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--fch);
+    text-transform: capitalize;
+    padding-left: 30px;
+    margin-top: -8px;
+}
+#whtd .whtd-item:hover h6{
+    color: #fff;
+}
+#whtd .whtd-item p{
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--hc);
+    padding-left: 30px;
+    padding-top: 10px;
+    line-height: 26px;
+}
+#whtd .whtd-item:hover p{
+    color: #fff;
+}
+#whtd .whtd-item a{
+    font-family: var(--pf);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--hc);
+    text-transform: capitalize;
+    padding-left: 30px;
+}
+#whtd .whtd-item:hover a{
+    color: #fff;
+}
+ /* ===========================
+    what to do part css ends
+============================ */
+
+
+ /* ===========================
+    top remote worker css starts
+============================ */
+#toprw{
+    background: var(--cbg);
+    margin-top: 100px;
+    padding: 60px 0;
+}
+#toprw .toprw-items{
+    background: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 65px;
+    transition: all linear 0.3s;
+}
+#toprw .toprw-items:hover{
+    -webkit-box-shadow: 2px 2px 46px -9px rgba(0,0,0,0.22);
+    -moz-box-shadow: 2px 2px 46px -9px rgba(0,0,0,0.22);
+    box-shadow: 2px 2px 46px -9px rgba(0,0,0,0.22);
+}
+#toprw .toprw-items .toprw-it-pic{
+    position: relative;
+}
+#toprw .toprw-items .toprw-it-pic .worker-pic-overlay{
+    width: 52px;
+    height: 52px;
+    background: var(--hbg);
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 62%;
+    left: 58%;
+}
+#toprw .toprw-items .toprw-it-pic .worker-pic-overlay h4{
+    font-family: var(--hf);
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 52px;
+}
+#toprw .toprw-items .worker-identity{
+    padding-top: 15px;
+}
+#toprw .toprw-items .worker-identity h4{
+    font-family: var(--pf);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--hc);
+    text-transform: uppercase;
+}
+#toprw .toprw-items .worker-identity h5{
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--hc);
+    text-transform: capitalize;
+    margin-top: -5px;
+}
+#toprw .toprw-items .worker-identity span i{
+    color: #f68b1e;
+}
+#toprw .toprw-items .worker-identity .star-text{
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--pc);
+    text-transform: capitalize;
+}#toprw .toprw-items .worker-details{
+    padding-top: 23px;
+    padding-bottom: 30px;
+}
+#toprw .toprw-items .worker-details .worker-det-1{
+    border-top: 1px solid var(--cbg);
+    border-bottom: 1px solid var(--cbg);
+}
+#toprw .toprw-items .worker-details .worker-det-1 .hour-rate{
+    float: left;
+    margin-top: 15px;
+}
+#toprw .toprw-items .worker-details .worker-det-1 .hour-rate h4{
+    font-family: var(--pf);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--hc);
+    text-transform: capitalize;
+}
+#toprw .toprw-items .worker-details .worker-det-1 .act-rate{
+    float: right;
+    margin-top: 15px;
+}
+#toprw .toprw-items .worker-details .worker-det-1 .act-rate h4{
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--hc);
+    text-transform: capitalize;
+}
+#toprw .toprw-items .worker-details .worker-det-2{
+    border-bottom: 1px solid var(--cbg);
+}
+#toprw .toprw-items .worker-details .worker-det-2 .location{
+    float: left;
+    margin-top: 15px;
+}
+#toprw .toprw-items .worker-details .worker-det-2 .location h4{
+    font-family: var(--pf);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--hc);
+    text-transform: capitalize;
+}
+#toprw .toprw-items .worker-details .worker-det-2 .act-loc{
+    float: right;
+    margin-top: 15px;
+}
+#toprw .toprw-items .worker-details .worker-det-2 .act-loc h4{
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--hc);
+    text-transform: capitalize;
+    display: inline-block;
+}
+#toprw .toprw-items .worker-details .worker-det-3{
+    border-bottom: 1px solid var(--cbg);
+}
+#toprw .toprw-items .worker-details .worker-det-3 .success{
+    float: left;
+    margin-top: 15px;
+}
+#toprw .toprw-items .worker-details .worker-det-3 .success h4{
+    font-family: var(--pf);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--hc);
+    text-transform: capitalize;
+}
+#toprw .toprw-items .worker-details .worker-det-3 .suc-rate{
+    float: right;
+    margin-top: 15px;
+}
+#toprw .toprw-items .worker-details .worker-det-3 .suc-rate h4{
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--hc);
+    text-transform: capitalize;
+    display: inline-block;
+}
+#toprw .toprw-items .view-more{
+    position: relative;
+}
+#toprw .toprw-items .view-more::before{
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 200%;
+    left: 0;
+    z-index: 99999999;
+    background: var(--hbg);
+    transition: all linear 0.3s;
+}
+#toprw .toprw-items:hover .view-more::before{
+    width: 100%;
+}
+#toprw .toprw-items .view-more a{
+    font-family: var(--pf);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--hc);
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+}
+#toprw .toprw-items:hover .view-more a{
+    color: var(--fch);
+}
+#toprw .toprw-last-text{
+    margin-top: 50px;
+}
+#toprw .toprw-last-text p{
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--pc);
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+#toprw .toprw-last-text button{
+    width: 241px;
+    height: 56px;
+    background: var(--hbg);
+    border: none;
+    outline: 0;
+    font-family: var(--pf);
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 56px;
+    text-align: center;
+    border-radius: 5px;
+    float: right;
+}
+#toprw .toprw-last-text button:hover{
+    background: var(--hbgi);
+    box-shadow: 0px 0px 20px 1px rgb(8 186 239 / 35%);
+}
+#toprw .toprw-last-text button span{
+    padding-left: 6px;
+}
+#toprw .toprw-last-text button span i{
+    font-size: 20px;
+}
+ /* ===========================
+    top remote worker css ends
+============================ */
+
+
+ /* ===========================
+    more worker part css starts
+============================ */
+#mworkerp{
+    margin-top: 95px;
+}
+#mworkerp .mworker-item h4{
+    font-family: var(--hf);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--hc);
+    text-transform: capitalize;
+}
+#mworkerp .mworker-item h5{
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--pc);
+    text-transform: capitalize;
+    margin-top: -10px;
+}
+#mworkerp .mworker-item .mworker-image{
+    position: relative;
+}
+#mworkerp .mworker-item .mworker-image img{
+    -webkit-box-shadow: 2px 2px 46px -9px rgba(0,0,0,0.22);
+    -moz-box-shadow: 2px 2px 46px -9px rgba(0,0,0,0.22);
+    box-shadow: 2px 2px 46px -9px rgba(0,0,0,0.22);
+    margin-top: 5px;
+}
+#mworkerp .mworker-item .mworker-image .mworker-image-overlay{
+    position: absolute;
+    top: 5%;
+    left: 82%;
+}
+#mworkerp .mworker-item .mworker-image .mworker-image-overlay i{
+    font-size: 16px;
+    color: #fff;
+}
+#mworkerp .mworker-item .mworker-image .mworker-image-overlay-2{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#mworkerp .mworker-item .mworker-image .mworker-image-overlay-2 i{
+    font-size: 16px;
+    color: #fff;
+}
+#mworkerp .mworker-item .mworker-image .mworker-image-overlay-2 a i{
+    width: 70px;
+    height: 70px;
+    background: var(--hbg);
+    border-radius: 50%;
+    line-height: 70px;
+    text-align: center;
+    font-size: 24px;
+}
+#mworkerp .mworker-item h6{
+    font-family: var(--sf);
+    font-size: 24px;
+    font-weight: 400;
+    color: #999999;
+    font-style: italic;
+    text-transform: capitalize;
+    padding-top: 35px;
+}
+#mworkerp .mworker-item .mworker-item-slider{
+    padding-top: 54px;
+}
+#mworkerp .mworker-item .mworker-item-slider .slider-item .mworker-image{
+    float: left;
+}
+#mworkerp .mworker-item .mworker-item-slider .slider-item .mworker-image{
+    position: relative;
+    margin-right: 30px;
+}
+#mworkerp .mworker-item .mworker-item-slider .slider-item .mworker-image .mworker-image-overlay{
+    position: absolute;
+    top: 5%;
+    left: 87%;
+}
+#mworkerp .mworker-item .mworker-item-slider .slider-item .mworker-image img{
+    box-shadow: none;
+}
+#mworkerp .mworker-item .mworker-item-slider .slider-item .mworker-text-slider{
+    padding-top: 40px;
+} 
+#mworkerp .mworker-item .mworker-item-slider .slider-item .mworker-text-slider p{
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    text-transform: capitalize;
+    padding-top: 15px;
+}
+#mworkerp .mworker-item .mworker-item-slider .slider-item .mworker-text-slider span i{
+    color: #fbca07;
+}
+#mworkerp .mworker-item .mworker-item-slider .slider-item .mworker-text-slider h5{
+    margin-bottom: -1px
+}
+#mworkerp .mworker-item .mworker-item-slider{
+    position: relative;
+}
+#mworkerp .mworker-item .mworker-item-slider .slick-dots{
+    position: absolute;
+    left: 11.8%;
+    bottom: -12%;
+    display: flex;
+}
+#mworkerp .mworker-item .mworker-item-slider .slick-dots li{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background: var(--fo);
+    list-style: none;
+}
+#mworkerp .mworker-item .mworker-item-slider .slick-dots li.slick-active{
+    background: var(--hbg);
+    transform: scale(1.5);
+}
+#mworkerp .mworker-item .mworker-item-slider .slick-dots li button{
+    font-size: 0;
+    border: none;
+    background: none;
+    outline: 0;
+}
+ /* ===========================
+    more worker part css ends
+============================ */
+
+ /* ===========================
+    brand part css starts
+============================ */
+#brand{
+    margin-top: 100px;
+}
+#brand .milestone{
+    position: relative;
+    margin-top: 40px;
+}
+#brand .milestone::before{
+    content: '';
+    width: 48%;
+    height: 1px;
+    background: var(--fo);
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-50%,-50%);
+}
+#brand .milestone::after{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: var(--fo);
+    position: absolute;
+    top: 50%;
+    left: 41%;
+    transform: translate(-50%,-50%);
+}
+#brand .milestone span{
+    font-family: var(--hf);
+    font-size: 38px;
+    font-weight: 400;
+    color: var(--hc);
+    text-transform: capitalize;
+}
+#brand .milestone h5{
+    font-family: var(--hf);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--hc);
+    text-transform: capitalize;
+    margin-top: -13px;
+    margin-bottom: 100px;
+}
+#brand .milestone .mile-text-1{
+    float: left;
+}
+#brand .milestone .mile-text-2{
+    text-align: right;
+    margin-right: 130px;
+}
+#brand .milestone .mile-text-3{
+    float: left;
+}
+#brand .milestone .mile-text-4{
+    text-align: right;
+    margin-right: 130px;
+}
+#brand .brand-logos{
+    margin-top: 50px;
+}
+#brand .brand-logos .br-logo-1{
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+#brand .brand-logos .br-logo-3{
+    float: left;
+    margin-left: 30px;
+}
+#brand .brand-logos .br-logo-2{
+    float: right;
+    margin-bottom: 30px;
+}
+#brand .brand-logos .br-logo-4{
+    float: right;
+}
+ /* ===========================
+    brand part css ends
+============================ */
+
+ /* ===========================
+    footer part css starts
+============================ */
+#footer{
+    background: url(../images/footer-bg.jpg) no-repeat center / cover;
+    position: relative;
+}
+#footer .footer-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+}
+#footer::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.10);
+    position: absolute;
+    top: 27%;
+    left: 0%;
+}
+#footer::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.10);
+    position: absolute;
+    top: 89%;
+    left: 0%;
+}
+#footer .footer-overlay .footer-logo{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#footer .footer-overlay .footer-heading{
+    padding-top: 60px;
+}
+#footer .footer-overlay .footer-heading h4{
+    font-family: var(--hf);
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: -5px;
+}
+#footer .footer-overlay .footer-heading span{
+    width: 50px;
+    height: 5px;
+    background: var(--fch);
+    display: inline-block;
+    border-radius: 5px;
+}
+#footer .footer-overlay p{
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 26px;
+    padding-top: 15px;
+}
+#footer .footer-overlay .footer-about .footer-about-text a{
+    font-family: var(--pf);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--fch);
+    text-transform: capitalize;
+}
+#footer .footer-overlay .footer-cand-links{
+    padding-left: 11px;
+}
+#footer .footer-overlay .footer-cand-links ul{
+    padding-top: 5px;
+}
+#footer .footer-overlay .footer-cand-links ul li a{
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 40px;
+    transition: all linear 0.3s;
+}
+#footer .footer-overlay .footer-cand-links ul li{
+    position: relative;
+}
+#footer .footer-overlay .footer-cand-links ul li:hover a{
+    margin-left: 20px;
+    color: var(--fch);
+}
+#footer .footer-overlay .footer-cand-links ul li::before{
+    content: '';
+    width: 40px;
+    height: 1px;
+    border: 2px dashed #fff;
+    position: absolute;
+    top: 44%;
+    left: -27%;
+    transition: all linear 0.3s;
+}
+#footer .footer-overlay .footer-cand-links ul li:hover:before{
+    width: 60px;
+    border: 2px dashed var(--fch);
+}
+#footer .footer-overlay .footer-newsletter .footer-input input{
+    font-family: var(--pf);
+    font-size: 13px;
+    font-weight: 400;
+    color: #999999;
+    font-style: italic;
+    padding-left: 15px;
+    background: transparent;
+    border: 1px solid #fff;
+    padding-top: 13px;
+    padding-bottom: 10px;
+    width: 66%;
+    outline: 0;
+}
+#footer .footer-overlay .footer-newsletter .footer-input button{
+    width: 32%;
+    height: 48px;
+    background: var(--hbg);
+    font-family: var(--pf);
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    outline: 0;
+    text-transform: capitalize;
+}
+#footer .footer-overlay .footer-newsletter .footer-socials ul{
+    padding-left: 0px !important;
+    padding-top: 30px !important;
+}
+#footer .footer-overlay .footer-newsletter .footer-socials ul li{
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    list-style: none;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    margin-left: 0px;
+    transition: all linear 0.3s;
+}
+#footer .footer-overlay .footer-newsletter .footer-socials ul li:hover{
+    background: var(--hbgi);
+}
+#footer .footer-overlay .footer-newsletter .footer-socials ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--fch);
+}
+#footer .footer-overlay .footer-newsletter .footer-socials ul li:hover a{
+    color: #fff;
+}
+#footer .footer-overlay .footer-last-text{
+    padding-top: 30px;
+}
+#footer .footer-overlay .footer-last-text p{
+    font-family: var(--pf);
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+ /* ===========================
+    footer part css ends
+============================ */
+
+
+
+
 
 
 

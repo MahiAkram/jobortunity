@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>jobortunity</title>
 </head>
 <body>
@@ -14,7 +18,7 @@
     ============================ -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="images/Logo.png"       alt="Logo"></a>
+          <a class="navbar-brand" href="#"><img src="images/Logo.png"       alt="Logo" class="img-fluid"></a>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
@@ -71,86 +75,65 @@
 
 
     <!-- ===========================
-            submission starts
+            submit starts
     ============================ -->
     <section id="submit">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="sub-bars">
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="get-tab" data-bs-toggle="tab" data-bs-target="#get-tab" type="button" role="tab" aria-controls="get-tab" aria-selected="true">get a job</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="post-tab" data-bs-toggle="tab" data-bs-target="#post-tab" type="button" role="tab" aria-controls="post-tab" aria-selected="false">post a job</button>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-12">
-            <div class="sub-form">
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="get-tab" role="tabpanel" aria-labelledby="get-tab">
-                  <form class="row gx-3 gy-2 align-items-center">
-                    <div class="col-sm-3 in-txt">
-                      <input type="text" class="form-control" id="specificSizeInputName" placeholder="keywords e.g. graphics design">
-                    </div>
-                    <div class="col-sm-3 sel-txt">
-                      <select class="form-select" id="specificSizeSelect">
-                        <option selected>Choose a category</option>
-                        <option value="1">graphics design</option>
-                        <option value="2">front end development</option>
-                        <option value="3">backend development</option>
-                        <option value="4">app development</option>
-                        <option value="5">software development</option>
-                        <option value="6">it support and management</option>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">get a job</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">post a job</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="submitter">
+                      <input type="text" placeholder="keywords e.g. Graphics design">
+                      <select name="" id="category">
+                        <option value="placeh">Category e.g. Graphics design</option>
+                        <option value="opt-1">Front end developer</option>
+                        <option value="opt-2">Back end developer</option>
+                        <option value="opt-3">App developer</option>
                       </select>
-                    </div>
-                    <div class="col-sm-3 location sel-txt">
-                      <select class="form-select" id="specificSizeSelect">
-                        <option selected>location</option>
-                        <option value="1">usa</option>
-                        <option value="2">japan</option>
-                        <option value="3">bangladesh</option>
-                        <option value="4">europe</option>
-                        <option value="5">india</option>
+                      <select name="" id="location">
+                        <option value="placeh">North America</option>
+                        <option value="opt-1">South America</option>
+                        <option value="opt-2">Europe</option>
+                        <option value="opt-3">Asia</option>
                       </select>
+                      <button>search</button>
                     </div>
-                    <div class="col-auto">
-                      <button type="submit" class="btn btn-primary">search</button>
-                    </div>
-                  </form>
+                  </div>
                 </div>
-                <div class="tab-pane fade" id="post-tab" role="tabpanel" aria-labelledby="post-tab"><form class="row gx-3 gy-2 align-items-center">
-                  <div class="col-sm-3 in-txt">
-                    <input type="text" class="form-control" id="specificSizeInputName" placeholder="keywords e.g. graphics design">
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="submitter">
+                      <input type="text" placeholder="keywords e.g. Graphics design">
+                      <select name="" id="category">
+                        <option value="placeh">Category e.g. Graphics design</option>
+                        <option value="opt-1">Front end developer</option>
+                        <option value="opt-2">Back end developer</option>
+                        <option value="opt-3">App developer</option>
+                      </select>
+                      <select name="" id="location">
+                        <option value="placeh">North America</option>
+                        <option value="opt-1">South America</option>
+                        <option value="opt-2">Europe</option>
+                        <option value="opt-3">Asia</option>
+                      </select>
+                      <button>submit</button>
+                    </div>
                   </div>
-                  <div class="col-sm-3 sel-txt">
-                    <select class="form-select" id="specificSizeSelect">
-                      <option selected>Choose a category</option>
-                      <option value="1">graphics design</option>
-                      <option value="2">front end development</option>
-                      <option value="3">backend development</option>
-                      <option value="4">app development</option>
-                      <option value="5">software development</option>
-                      <option value="6">it support and management</option>
-                    </select>
-                  </div>
-                  <div class="col-sm-3 location sel-txt">
-                    <select class="form-select" id="specificSizeSelect">
-                      <option selected>location</option>
-                      <option value="1">usa</option>
-                      <option value="2">japan</option>
-                      <option value="3">bangladesh</option>
-                      <option value="4">europe</option>
-                      <option value="5">india</option>
-                    </select>
-                  </div>
-                  <div class="col-auto">
-                    <button type="submit" class="btn btn-primary">submit</button>
-                  </div>
-                </form></div>
+                </div>
+              </div>
               </div>
             </div>
           </div>
@@ -158,8 +141,950 @@
       </div>
     </section>
     <!-- ===========================
-            submission ends
+            submit ends
     ============================ -->
+
+
+    <!-- ===========================
+            category starts
+    ============================ -->
+    <section id="category">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="heading">
+              <h3>popular categories</h3>
+              <span></span>
+              <p class="title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 text-center col-sm-6 ">
+            <div class="cat-item m-95">
+              <img src="images/Icon1.png" alt="Icon1" class="img-fluid">
+              <h4>graphics design</h4>
+              <p>(3215 jobs availabe)</p>
+              <div class="cat-item-overlay">
+                <img src="images/Icon1.png" alt="Icon1" class="img-fluid">
+                <h4>graphics design</h4>
+                <p>(3215 jobs availabe)</p>
+                <a href="#">view jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 text-center col-sm-6">
+            <div class="cat-item m-95">
+              <img src="images/Icon2.png" alt="Icon1" class="img-fluid">
+              <h4>web design</h4>
+              <p>(3215 jobs availabe)</p>
+              <div class="cat-item-overlay">
+                <img src="images/Icon2.png" alt="Icon1" class="img-fluid">
+                <h4>web design</h4>
+                <p>(3215 jobs availabe)</p>
+                <a href="#">view jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 text-center col-sm-6">
+            <div class="cat-item m-95">
+              <img src="images/Icon3.png" alt="Icon1" class="img-fluid">
+              <h4>web development</h4>
+              <p>(3215 jobs availabe)</p>
+              <div class="cat-item-overlay">
+                <img src="images/Icon3.png" alt="Icon1" class="img-fluid">
+                <h4>web development</h4>
+                <p>(3215 jobs availabe)</p>
+                <a href="#">view jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 text-center col-sm-6">
+            <div class="cat-item m-95">
+              <img src="images/Icon4.png" alt="Icon1" class="img-fluid">
+              <h4>teachers & mentor</h4>
+              <p>(3215 jobs availabe)</p>
+              <div class="cat-item-overlay">
+                <img src="images/Icon4.png" alt="Icon1" class="img-fluid">
+                <h4>teachers & mentor</h4>
+                <p>(3215 jobs availabe)</p>
+                <a href="#">view jobs</a>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col-lg-3 text-center m-10 col-sm-6">
+            <div class="cat-item">
+              <img src="images/Icon5.png" alt="Icon1" class="img-fluid">
+              <h4>account & finance</h4>
+              <p>(3215 jobs availabe)</p>
+              <div class="cat-item-overlay">
+                <img src="images/Icon5.png" alt="Icon1" class="img-fluid">
+                <h4>account & finance</h4>
+                <p>(3215 jobs availabe)</p>
+                <a href="#">view jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 text-center m-10 col-sm-6">
+            <div class="cat-item">
+              <img src="images/Icon6.png" alt="Icon1" class="img-fluid">
+              <h4>content writing</h4>
+              <p>(3215 jobs availabe)</p>
+              <div class="cat-item-overlay">
+                <img src="images/Icon6.png" alt="Icon1" class="img-fluid">
+                <h4>content writing</h4>
+                <p>(3215 jobs availabe)</p>
+                <a href="#">view jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 text-center m-10 col-sm-6">
+            <div class="cat-item">
+              <img src="images/Icon7.png" alt="Icon1" class="img-fluid">
+              <h4>telecommunication</h4>
+              <p>(3215 jobs availabe)</p>
+              <div class="cat-item-overlay">
+                <img src="images/Icon7.png" alt="Icon1" class="img-fluid">
+                <h4>telecommunication</h4>
+                <p>(3215 jobs availabe)</p>
+                <a href="#">view jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 text-center m-10 col-sm-6">
+            <div class="cat-item">
+              <img src="images/Icon8.png" alt="Icon1" class="img-fluid">
+              <h4>healthcare</h4>
+              <p>(3215 jobs availabe)</p>
+              <div class="cat-item-overlay">
+                <img src="images/Icon8.png" alt="Icon1" class="img-fluid">
+                <h4>healthcare</h4>
+                <p>(3215 jobs availabe)</p>
+                <a href="#">view jobs</a>
+              </div>
+            </div>
+          </div>      
+        </div>
+      </div>
+    </section>
+    <!-- ===========================
+            category ends
+    ============================ -->
+
+
+    <!-- ===========================
+            how to do part starts
+    ============================ -->
+    <section id="howtd">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="heading m-60">
+              <h3>how it works</h3>
+              <span></span>
+              <p class="title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 text-center">
+            <div class="howtd-item">
+              <div class="htd-item-icon">
+                <img src="images/htd-icon1.png" alt="">
+              </div>
+              <div class="htd-item-text">
+                <h4>create an account</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="howtd-item">
+              <div class="htd-item-icon">
+                <img src="images/htd-icon2.png" alt="">
+              </div>
+              <div class="htd-item-text">
+                <h4>search for jobs</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="howtd-item">
+              <div class="htd-item-icon-special">
+                <img src="images/htd-icon3.png" alt="">
+              </div>
+              <div class="htd-item-text">
+                <h4>apply for jobs</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===========================
+            how to do part ends
+    ============================ -->
+
+
+    <!-- ===========================
+          recent jobs part starts
+    ============================ -->
+    <section id="recent-jobs">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="heading">
+              <h3>recent jobs</h3>
+              <span></span>
+              <p class="title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+          <div class="row">
+            <div class="recent-jobs-search-bar">
+              <div class="row">
+                <div class="col-lg-5">
+                  <input type="text" placeholder="Keywords e.g. Graphics Design">
+                </div>
+                <div class="col-lg-5">
+                  <select name="" id="recent-jobs-locaton">
+                    <option value="first-rj-opt">location: any location</option>
+                    <option value="sec-rj-opt">north america</option>
+                    <option value="thd-rj-opt">south america</option>
+                    <option value="fht-rj-opt">europe</option>
+                    <option value="fith-rj-opt">asia</option>
+                  </select>
+                </div>
+                <div class="col-lg-2">
+                  <button>search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="rj-filter-options">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="filter-group">
+                    <input type="checkbox" id="full-time">
+                    <label for="full-time">full time</label>
+                  </div>
+                  <div class="filter-group">
+                    <input type="checkbox" id="part-time">
+                    <label for="part-time">part time</label>
+                  </div>
+                  <div class="filter-group">
+                    <input type="checkbox" id="remote">
+                    <label for="remote">remote</label>
+                  </div>
+                  <div class="filter-group">
+                    <input type="checkbox" id="outsource">
+                    <label for="outsource">outsource</label>
+                  </div>
+                  <div class="filter-group">
+                    <input type="checkbox" id="monthly">
+                    <label for="monthly">monthly</label>
+                  </div>
+                  <div class="filter-group">
+                    <input type="checkbox" id="hourly">
+                    <label for="hourly">hourly</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rj-works mb-30">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="work-item">
+                    <div class="work-icon">
+                      <img src="images/Layer 1.jpg" alt="layer1">
+                    </div>
+                    <div class="work-text">
+                    <h6>full time</h6>
+                    <h4>front-end & back-end development</h4>
+                    <h5>two states company</h5>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="loc-icon">
+                  <i class="fas fa-map-marker-alt"><span>los angles</span></i>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="work-salary">
+                  <p>$100 - $300 / Month</p>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="view-button">
+                  <button>view job</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rj-works mb-30">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="work-item">
+                    <div class="work-icon">
+                      <img src="images/Layer 2.jpg" alt="layer1">
+                    </div>
+                    <div class="work-text">
+                    <h6>full time</h6>
+                    <h4>back-end development</h4>
+                    <h5>creative it institiute</h5>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="loc-icon">
+                  <i class="fas fa-map-marker-alt"><span>los angles</span></i>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="work-salary">
+                  <p>$100 - $300 / Month</p>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="view-button">
+                  <button>view job</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rj-works mb-30">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="work-item">
+                    <div class="work-icon">
+                      <img src="images/Layer 3.jpg" alt="layer1">
+                    </div>
+                    <div class="work-text">
+                    <h6>full time</h6>
+                    <h4>ui - ux designer</h4>
+                    <h5>olympus city</h5>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="loc-icon">
+                  <i class="fas fa-map-marker-alt"><span>los angles</span></i>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="work-salary">
+                  <p>$100 - $300 / Month</p>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="view-button">
+                  <button>view job</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rj-works mb-30">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="work-item">
+                    <div class="work-icon">
+                      <img src="images/Layer 4.jpg" alt="layer1">
+                    </div>
+                    <div class="work-text">
+                    <h6>full time</h6>
+                    <h4>graphics designer</h4>
+                    <h5>seven rings</h5>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="loc-icon">
+                  <i class="fas fa-map-marker-alt"><span>los angles</span></i>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="work-salary">
+                  <p>$100 - $300 / Month</p>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="view-button">
+                  <button>view job</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rj-works mb-30">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="work-item">
+                    <div class="work-icon">
+                      <img src="images/Layer 5.jpg" alt="layer1">
+                    </div>
+                    <div class="work-text">
+                    <h6>full time</h6>
+                    <h4>motion graphics</h4>
+                    <h5>quick employment</h5>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="loc-icon">
+                  <i class="fas fa-map-marker-alt"><span>los angles</span></i>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="work-salary">
+                  <p>$100 - $300 / Month</p>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="view-button">
+                  <button>view job</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="recent-work-last-text">
+            <div class="row">
+              <div class="col-lg-9 col-sm-8">
+                <p>you have 21,023 jobs yet, browse more.......</p>
+              </div>
+              <div class="col-lg-3 col-sm-4">
+                <button>browse all jobs <span><i class="fas fa-long-arrow-alt-right"></i></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- ===========================
+          recent jobs part ends
+    ============================ -->
+
+
+    <!-- ===========================
+          what to do part starts
+    ============================ -->
+    <section id="whtd">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="whtd-item">
+              <h5>i want to work</h5>
+              <h6>163,352 jobs are available now</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim amar sonar veniam.</p>
+              <a href="#">sign up <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="whtd-item">
+              <h5>i want to hire</h5>
+              <h6>163,352 jobs are available now</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim amar sonar veniam.</p>
+              <a href="#">sign up <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===========================
+          what to do part ends
+    ============================ -->
+
+
+    <!-- ===========================
+        top remote workers part starts
+    ============================ -->
+      <section id="toprw">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <div class="heading">
+                <h3>top remote workers</h3>
+                <span></span>
+                <p class="title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="toprw-items">
+                <div class="toprw-it-pic text-center">
+                  <img src="images/worker1.png" alt="worker1">
+                  <div class="worker-pic-overlay">
+                    <h4>2</h4>
+                  </div>
+                </div>
+                <div class="worker-identity text-center">
+                  <h4>alex smith</h4>
+                  <h5>web developer</h5>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star-half"></i></span>
+                  <span class="star-text">4.9 (520 reviews)</span>
+                </div>
+                <div class="worker-details">
+                  <div class="worker-det-1">
+                    <div class="hour-rate">
+                      <h4>hourly rate</h4>
+                    </div>
+                    <div class="act-rate">
+                      <h4>$25.00/hr</h4>
+                    </div>
+                    <div class="clr"></div>
+                  </div>
+                  <div class="worker-det-2">
+                    <div class="location">
+                      <h4>location</h4>
+                    </div>
+                    <div class="act-loc">
+                      <h4>bangladesh</h4>
+                      <img src="images/Flag_of_Bangladesh.png" alt="">
+                    </div>
+                    <div class="clr"></div>
+                  </div>
+                  <div class="worker-det-3">
+                    <div class="success">
+                      <h4>job success</h4>
+                    </div>
+                    <div class="suc-rate">
+                      <h4>100%</h4>
+                    </div>
+                    <div class="clr"></div>
+                  </div>
+                </div>
+                <div class="view-more text-center">
+                  <a href="#">view more <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="toprw-items">
+                <div class="toprw-it-pic text-center">
+                  <img src="images/worker2.png" alt="worker1">
+                  <div class="worker-pic-overlay">
+                    <h4>2</h4>
+                  </div>
+                </div>
+                <div class="worker-identity text-center">
+                  <h4>marie ann</h4>
+                  <h5>web designer</h5>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star-half"></i></span>
+                  <span class="star-text">4.8 (220 reviews)</span>
+                </div>
+                <div class="worker-details">
+                  <div class="worker-det-1">
+                    <div class="hour-rate">
+                      <h4>hourly rate</h4>
+                    </div>
+                    <div class="act-rate">
+                      <h4>$15.00/hr</h4>
+                    </div>
+                    <div class="clr"></div>
+                  </div>
+                  <div class="worker-det-2">
+                    <div class="location">
+                      <h4>location</h4>
+                    </div>
+                    <div class="act-loc">
+                      <h4>bangladesh</h4>
+                      <img src="images/Flag_of_Bangladesh.png" alt="">
+                    </div>
+                    <div class="clr"></div>
+                  </div>
+                  <div class="worker-det-3">
+                    <div class="success">
+                      <h4>job success</h4>
+                    </div>
+                    <div class="suc-rate">
+                      <h4>100%</h4>
+                    </div>
+                    <div class="clr"></div>
+                  </div>
+                </div>
+                <div class="view-more text-center">
+                  <a href="#">view more <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="toprw-items">
+                <div class="toprw-it-pic text-center">
+                  <img src="images/worker3.png" alt="worker1">
+                  <div class="worker-pic-overlay">
+                    <h4>2</h4>
+                  </div>
+                </div>
+                <div class="worker-identity text-center">
+                  <h4>rover hunt</h4>
+                  <h5>graphics designer</h5>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star-half"></i></span>
+                  <span class="star-text">4.9 (1520 reviews)</span>
+                </div>
+                <div class="worker-details">
+                  <div class="worker-det-1">
+                    <div class="hour-rate">
+                      <h4>hourly rate</h4>
+                    </div>
+                    <div class="act-rate">
+                      <h4>$25.00/hr</h4>
+                    </div>
+                    <div class="clr"></div>
+                  </div>
+                  <div class="worker-det-2">
+                    <div class="location">
+                      <h4>location</h4>
+                    </div>
+                    <div class="act-loc">
+                      <h4>bangladesh</h4>
+                      <img src="images/Flag_of_Bangladesh.png" alt="">
+                    </div>
+                    <div class="clr"></div>
+                  </div>
+                  <div class="worker-det-3">
+                    <div class="success">
+                      <h4>job success</h4>
+                    </div>
+                    <div class="suc-rate">
+                      <h4>100%</h4>
+                    </div>
+                    <div class="clr"></div>
+                  </div>
+                </div>
+                <div class="view-more text-center">
+                  <a href="#">view more <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="toprw-last-text">
+            <div class="row">
+              <div class="col-lg-9 col-sm-7">
+                <p>There have 2,123 skilled wokers yet, Browse more...</p>
+              </div>
+              <div class="col-lg-3 col-sm-5">
+                <button>browse all workers <span><i class="fas fa-long-arrow-alt-right"></i></span></button>
+              </div>
+          </div>
+          </div>
+        </div>
+      </section>
+  
+    <!-- ===========================
+        top remote workers part ends
+    ============================ -->
+
+
+    <!-- ===========================
+        more worker part starts
+    ============================ -->
+    <section id="mworkerp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 text-center">
+            <div class="mworker-item">
+                <h4>maria lerane</h4>
+                <h5>wordpress developer</h5>
+                <div class="mworker-image">
+                  <img src="images/mworker1.jpg" class="img-fluid" alt="">
+                  <div class="mworker-image-overlay">
+                    <i class="fas fa-video"></i>
+                  </div>
+                  <div class="mworker-image-overlay-2">
+                    <a  class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/VplgKvbk_P8"><i class="fas fa-play"></i></a>
+                  </div>
+                </div>
+                <h6>click play button to watch video testimonial</h6>
+          </div>
+        </div>
+          <div class="col-lg-3 text-center">
+            <div class="mworker-item">
+                <h4>leorane</h4>
+                <h5>wordpress developer</h5>
+                <div class="mworker-image">
+                  <img src="images/mworker2.jpg" class="img-fluid" alt="">
+                  <div class="mworker-image-overlay">
+                    <i class="fas fa-volume-up"></i>
+                  </div>
+                  <div class="mworker-image-overlay-2">
+                    <a class="venobox" data-vbtype="iframe" href="https://files.fm/u/2gasyypyb"><i class="fas fa-play"></i></a>
+                  </div>
+                </div>
+                <h6>click play button to hear audio testimonial</h6>
+          </div>
+        </div>
+          <div class="col-lg-6">
+            <div class="mworker-item">
+              <div class="mworker-item-slider">
+                <div class="slider-item">
+                  <div class="mworker-image">
+                    <img src="images/mworker1.jpg" class="img-fluid" alt="">
+                    <div class="mworker-image-overlay">
+                      <i class="fas fa-pen"></i>
+                    </div>
+                  </div>
+                  <div class="mworker-text-slider">
+                    <h4>maria lerane</h4>
+                    <h5>wordpress developer</h5>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star-half"></i></span>
+                    <p>Lorem ipsum dolor sit amet, consetur adipisicing elit, sed do eiusmodepr incididunt ut labore et dolore na aliqua Lorem ipsum.</p> 
+                  </div>
+                </div>
+                <div class="slider-item">
+                  <div class="mworker-image">
+                    <img src="images/mworker2.jpg" class="img-fluid" alt="">
+                    <div class="mworker-image-overlay">
+                      <i class="fas fa-pen"></i>
+                    </div>
+                  </div>
+                  <div class="mworker-text-slider">
+                    <h4>leorane</h4>
+                    <h5>wordpress developer</h5>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star-half"></i></span>
+                    <p>Lorem ipsum dolor sit amet, consetur adipisicing elit, sed do eiusmodepr incididunt ut labore et dolore na aliqua Lorem ipsum.</p> 
+                  </div>
+                </div>
+                <div class="slider-item">
+                  <div class="mworker-image">
+                    <img src="images/mworker3.jpg" class="img-fluid" alt="">
+                    <div class="mworker-image-overlay">
+                      <i class="fas fa-pen"></i>
+                    </div>
+                  </div>
+                  <div class="mworker-text-slider">
+                    <h4>jenifer orza</h4>
+                    <h5>wordpress developer</h5>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star-half"></i></span>
+                    <p>Lorem ipsum dolor sit amet, consetur adipisicing elit, sed do eiusmodepr incididunt ut labore et dolore na aliqua Lorem ipsum.</p> 
+                  </div>
+                </div>
+              </div> 
+                
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ===========================
+        more worker part ends
+    ============================ -->
+
+    <!-- ===========================
+          brand part starts
+    ============================ -->
+    <section id="brand">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="heading">
+              <h3>our milestone & partners</h3>
+              <span></span>
+              <p class="title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-12">
+            <div class="milestone">
+              <div class="mile-text-1">
+                <span class="count-mile">220</span>
+                <span>+</span>
+                <h5>mou companies</h5>
+              </div>
+              <div class="mile-text-2">
+                <span class="count-mile">1800</span>
+                <span>+</span>
+                <h5>employees recruit</h5>
+              </div>
+              <div class="mile-text-3">
+                <span class="count-mile">100</span>
+                <span>%</span>
+                <h5>satisfied companies</h5>
+              </div>
+              <div class="mile-text-4 ">
+                <span class="count-mile">99</span>
+                <span>%</span>
+                <h5>satisfied employees</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-12 trt-cen">
+            <div class="brand-logos">
+              <div class="br-logo-1">
+                <img src="images/brand1.jpg" alt="">
+              </div>
+              <div class="br-logo-2">
+                <img src="images/brand2.jpg" alt="">
+              </div>
+              <div class="br-logo-3">
+                <img src="images/brand3.jpg" alt="">
+              </div>
+              <div class="br-logo-4">
+                <img src="images/brand4.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===========================
+          brand part ends
+    ============================ -->
+
+
+    <!-- ===========================
+          footer part starts
+    ============================ -->
+    <section id="footer">
+      <div class="footer-overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <div class="footer-logo">
+                <img src="images/footerLogo.png" class="img-fluid" alt="footerLogo">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="footer-about">
+                <div class="footer-heading">
+                  <h4>about us</h4>
+                  <span></span>
+                </div>
+                <div class="footer-about-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                  <a href="#">read more <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="footer-candidates">
+                <div class="footer-heading">
+                  <h4>for candidates</h4>
+                  <span></span>
+                </div>
+                <div class="footer-cand-links">
+                  <ul>
+                    <li><a href="#">browse jobs</a></li>
+                    <li><a href="#">user dashboard</a></li>
+                    <li><a href="#">submit resume</a></li>
+                    <li><a href="#">my bookmarks</a></li>
+                    <li><a href="#">job alerts</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="footer-candidates">
+                <div class="footer-heading">
+                  <h4>for employees</h4>
+                  <span></span>
+                </div>
+                <div class="footer-cand-links">
+                  <ul>
+                    <li><a href="#">browse candidate</a></li>
+                    <li><a href="#">user dashboard</a></li>
+                    <li><a href="#">resume page</a></li>
+                    <li><a href="#">post a job</a></li>
+                    <li><a href="#">my bookmarks</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="footer-newsletter">
+                <div class="footer-heading">
+                  <h4>subscribe for newsletter</h4>
+                  <span></span>
+                </div>
+                <div class="footer-news-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="footer-input">
+                  <input type="text" placeholder="Your E-mail Here">
+                  <button>subscribe</button>
+                </div>
+                <div class="footer-socials">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <div class="footer-last-text">
+                <p>&#169;Copyright 2019. All rights reserved by Designer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===========================
+          footer part ends
+    ============================ -->
+
+
+
 
 
 
@@ -187,6 +1112,10 @@
 
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
 </html>
