@@ -9,6 +9,56 @@
     .heading p{
         font-size: 14px;
      }
+     .navbar .navbar-brand{
+        width: 120px;
+    }
+    .navbar button{
+        outline: 0;
+    }
+    .navbar button span{
+        outline: 0;
+    }
+    .navbar .navbar-collapse{
+        background: var(--hbgi);
+    }
+    .navbar .navbar-nav .nav-item{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    .navbar .navbar-collapse .navbar-nav{
+        text-align: center;
+    }
+    .navbar .navbar-nav .nav-item .nav-link::before{
+        width: 0;
+    }
+    .navbar .navbar-nav .nav-item .nav-link:hover::before{
+        width: 0;
+    }
+    .navbar .navbar-nav .nav-item .nav-link{
+        color: #fff;
+    }
+    .navbar .navbar-nav .nav-item .nav-link:hover{
+        color: #222;
+    }
+    .navbar .navbar-nav .nav-item .active{
+        color: #222;
+        padding-top: 30px;
+    }
+    .navbar .navbar-nav .sib{
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-bottom: 30px;
+    }
+    .navbar .navbar-nav .sib a{
+        background: #fff;
+        color: #222;
+        margin: 0 auto;
+    }
+    .navbar .navbar-nav .sib a:hover{
+        background: #fff;
+        color: #222;
+    }
     #banner .banner-text{
         text-align: center;
     }
@@ -141,6 +191,29 @@
     #footer::after{
         top: 96%;
     }
+    #btp{
+        width: 60px;
+        height: 60px;
+        background: var(--hbgi);
+        position: fixed;
+        bottom: 5%;
+        right: 2%;
+        border-radius: 50%;
+        z-index: 9999999;
+        display: none;
+        cursor: pointer;
+    }
+    #btp i{
+        font-size: 25px;
+        color: #fff;
+        position: fixed;
+        bottom: 7%;
+        right: 5.2%;
+        z-index: 9999999999;
+    }
+    .menu-fix{
+        height: 120px;
+    }
 }
 @media (min-width: 576px) and (max-width: 767px) {
     .heading .title-text{
@@ -152,6 +225,56 @@
     .heading p{
         font-size: 14px;
      }
+     .navbar .navbar-brand{
+        width: 130px;
+    }
+     .navbar button{
+        outline: 0;
+    }
+    .navbar button span{
+        outline: 0;
+    }
+    .navbar .navbar-collapse{
+        background: var(--hbgi);
+    }
+    .navbar .navbar-nav .nav-item{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    .navbar .navbar-collapse .navbar-nav{
+        text-align: center;
+    }
+    .navbar .navbar-nav .nav-item .nav-link::before{
+        width: 0;
+    }
+    .navbar .navbar-nav .nav-item .nav-link:hover::before{
+        width: 0;
+    }
+    .navbar .navbar-nav .nav-item .nav-link{
+        color: #fff;
+    }
+    .navbar .navbar-nav .nav-item .nav-link:hover{
+        color: #222;
+    }
+    .navbar .navbar-nav .nav-item .active{
+        color: #222;
+        padding-top: 30px;
+    }
+    .navbar .navbar-nav .sib{
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-bottom: 30px;
+    }
+    .navbar .navbar-nav .sib a{
+        background: #fff;
+        color: #222;
+        margin: 0 auto;
+    }
+    .navbar .navbar-nav .sib a:hover{
+        background: #fff;
+        color: #222;
+    }
     #banner .banner-text{
         text-align: center;
     }
@@ -284,6 +407,29 @@
     #footer::after{
         top: 96%;
     }
+    #btp{
+        width: 60px;
+        height: 60px;
+        background: var(--hbgi);
+        position: fixed;
+        bottom: 5%;
+        right: 2%;
+        border-radius: 50%;
+        z-index: 9999999;
+        display: none;
+        cursor: pointer;
+    }
+    #btp i{
+        font-size: 25px;
+        color: #fff;
+        position: fixed;
+        bottom: 7%;
+        right: 5.1%;
+        z-index: 9999999999;
+    }
+    .menu-fix{
+        height: 130px;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .heading .title-text{
@@ -295,6 +441,56 @@
     .heading p{
         font-size: 14px;
      }
+     .navbar .navbar-brand{
+        width: 130px;
+    }
+     .navbar button{
+        outline: 0;
+    }
+    .navbar button span{
+        outline: 0;
+    }
+    .navbar .navbar-collapse{
+        background: var(--hbgi);
+    }
+    .navbar .navbar-nav .nav-item{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    .navbar .navbar-collapse .navbar-nav{
+        text-align: center;
+    }
+    .navbar .navbar-nav .nav-item .nav-link::before{
+        width: 0;
+    }
+    .navbar .navbar-nav .nav-item .nav-link:hover::before{
+        width: 0;
+    }
+    .navbar .navbar-nav .nav-item .nav-link{
+        color: #fff;
+    }
+    .navbar .navbar-nav .nav-item .nav-link:hover{
+        color: #222;
+    }
+    .navbar .navbar-nav .nav-item .active{
+        color: #222;
+        padding-top: 30px;
+    }
+    .navbar .navbar-nav .sib{
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-bottom: 30px;
+    }
+    .navbar .navbar-nav .sib a{
+        background: #fff;
+        color: #222;
+        margin: 0 auto;
+    }
+    .navbar .navbar-nav .sib a:hover{
+        background: #fff;
+        color: #222;
+    }
     #banner .banner-text{
         text-align: center;
     }
@@ -424,6 +620,29 @@
     #footer::after{
         top: 96%;
     }
+    #btp{
+        width: 60px;
+        height: 60px;
+        background: var(--hbgi);
+        position: fixed;
+        bottom: 5%;
+        right: 2%;
+        border-radius: 50%;
+        z-index: 9999999;
+        display: none;
+        cursor: pointer;
+    }
+    #btp i{
+        font-size: 25px;
+        color: #fff;
+        position: fixed;
+        bottom: 7%;
+        right: 4.2%;
+        z-index: 9999999999;
+    }
+    .menu-fix{
+        height: 130px;
+    }
 }
 @media (min-width: 992px) and (max-width: 1399px) {
     .heading .title-text{
@@ -434,6 +653,9 @@
      }
     .heading p{
         font-size: 16px;
+    }
+    .navbar .navbar-brand{
+        width: 130px;
     }
     .navbar .navbar-nav .nav-item{
         margin-left: 20px;
@@ -645,5 +867,28 @@
     }
     #footer .footer-overlay .footer-last-text p{
         font-size: 14px;
+    }
+    #btp{
+        width: 60px;
+        height: 60px;
+        background: var(--hbgi);
+        position: fixed;
+        bottom: 5%;
+        right: 2%;
+        border-radius: 50%;
+        z-index: 9999999;
+        display: none;
+        cursor: pointer;
+    }
+    #btp i{
+        font-size: 25px;
+        color: #fff;
+        position: fixed;
+        bottom: 7%;
+        right: 3.8%;
+        z-index: 9999999999;
+    }
+    .menu-fix{
+        height: 140px;
     }
 }
